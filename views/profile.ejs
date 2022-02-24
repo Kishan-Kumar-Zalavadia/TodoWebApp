@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Profile</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <a class="active" href="/index">Home</a>
+    <a href="/about">About</a>
+    <a href="/instructions">Instructions</a>
+    <a href="/developer">Developers</a>
+    <a href="/form">Contact Us</a>
+    <div class="dropdown" style="float: right;">
+      <button class="dropbtn">Account
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="/profile">Profile</a>
+        <a href="/logout">Logout</a>
+      </div>
+    </div>
+  </div>
+  <section id="contact-form" class="py-3">
+    <div class="container login-form">
+      <h1 class="l-heading">User Profile</h1>
+      <form>
+        <div>
+          <p><b>Name:</b>
+            <%= " " + data.name %>
+          </p>
+        </div>
+        <div>
+          <p><b>Email:</b>
+            <%= " " + data.email %>
+          </p>
+        </div>
+        <div>
+          <p><b>Username:</b>
+            <%= " " + data.username %>
+          </p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</body>
+
+
+
+</html>

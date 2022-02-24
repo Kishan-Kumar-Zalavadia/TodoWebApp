@@ -1,0 +1,305 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: rgb(217, 6, 209);
+  background: linear-gradient(
+    180deg,
+    rgba(217, 6, 209, 1) 0%,
+    rgba(72, 12, 128, 1) 100%
+  );
+  background:#f9cf5b ;
+  background-image: url(background.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.date {
+  display: block;
+  width: 500px;
+  text-align: center;
+  padding: 6px 16px;
+  margin: 50px auto;
+  background-color:  #231F20;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.form_control {
+  width: 500px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color:  #231F20;
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.473); */
+}
+
+.form_control p {
+  display: inline-block;
+  font-size: 22px;
+  margin: 0 0 40px 0;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+#chbx {
+  display: inline-block;
+  margin-right: 15px;
+  transform: scale(1.1);
+}
+
+#chbx:checked + p {
+  text-decoration: line-through;
+  color: red;
+}
+
+.add_form {
+  position: relative;
+}
+
+#add_inp {
+  border: 2px solid red;
+  width: 85%;
+  display: inline-block;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 2px solid rgb(85, 85, 85);
+  font-size: 22px;
+  text-align: center;
+  font-weight: 500;
+  color: #231F20;
+}
+
+#add_inp::placeholder {
+  font-weight: 400;
+}
+
+#add_inp:focus {
+  outline: none;
+  border-bottom: 4px solid rgb(0, 0, 0);
+  transition: all 0.1s ease-in-out;
+}
+
+#add_icon {
+  border: none;
+  right: 30px;
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 40px;
+  cursor: pointer;
+  bottom: 50px;
+}
+
+#add_icon:hover {
+  background-color: rgb(85, 85, 85);
+  
+}
+
+#add_icon span {
+  position: relative;
+  bottom: 8px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color:  #231F20;
+
+  overflow: hidden;
+  
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #808080;
+  background: linear-gradient(
+    0deg,
+    
+    rgb(255, 255, 255) 0%,
+  );
+
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #808080;
+  
+  color: white;
+}
+
+.abouts{
+  color: rgb(0, 0, 0);
+  text-align: right;
+}
+.instructions{
+  color: rgb(0, 0, 0);
+  text-align: right;
+}
+.developers{
+  color: rgb(255, 255, 255);
+  background-color:#231F20;
+  display: inline-block;
+  margin-left: 50%;
+}
+.user-logo{
+  justify-content: center;
+  margin-top:1px;
+  float: right;
+}
+
+/*Contact us form */
+.form-container{
+  
+  text-align: center;
+  line-height: 60px;
+  font-size: large;
+  font-style: italic;
+}
+
+input[type=text],input[type=email],input[type=textarea],input[type=password]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus {
+  background-color: rgb(255, 255, 255);
+  outline: none;
+}
+#lable{
+  font-weight: 800;
+}
+
+.login-form{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  line-height: 60px;
+  font-size: large;
+  font-style: italic;
+}
+
+.register-form{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  line-height: 60px;
+  font-size: large;
+  font-style: italic;
+}
+
+#button{
+  background-color: black;
+  width: 100px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 3px solid rgba(229, 255, 0, 0.911);
+  color: white;
+  text-align: center;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:#231F20;
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#808080;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+h1,h2{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.py-3 { padding: 30px 0; }
+
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}

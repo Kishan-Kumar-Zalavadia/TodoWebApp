@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Page</title>
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="/index">Home</a>
+        <a href="/about">About</a>
+        <a href="/instructions">Instructions</a>
+        <a href="/developer">Developers</a>
+        <a href="/form">Contact Us</a>
+        <div class="dropdown" style="float: right;">
+          <button class="dropbtn">Account 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/profile">Profile</a>
+            <a href="/logout">Logout</a>
+          </div>
+        </div> 
+      </div>
+<form action="/addForm" method="POST">
+<div class="login-form">
+<center>  <h1> Contact Form</h1> </center>
+<hr>
+<label id="lable"> Name: </label> 
+<input type="text" name="name" placeholder= "Name" size="15" required />
+<label id="lable"> Email: </label> 
+<input type="email" name="email" placeholder="Email" size="15" required />
+<label id="lable"> Phone: </label>  
+<input type="text" name="phone" placeholder="Phone" size="15"required />
+<label id="lable"> Comment: </label> 
+<input type="textarea" name="comment" placeholder="Comment" size="15" required/>
+
+<!-- The following tag input uses the type attribute which specifies the image, and the src attribute for specifying the path of an image, with the height and width attributes. -->
+<input type="image" src="https://www.freepngimg.com/thumb/submit_button/25497-9-submit-button-photos.png" name="submit" width="100" height="48" alt="submit" onclick="this.form.submit()"/>
+</div>
+</form>
+<script>
+    
+</script>
+</body>  
+</html>
+
+ 

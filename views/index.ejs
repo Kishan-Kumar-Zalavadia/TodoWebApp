@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="active" href="/index">Home</a>
+      <a href="/about">About</a>
+      <a href="/instructions">Instructions</a>
+      <a href="/developer">Developers</a>
+      <a href="/form">Contact Us</a>
+      <div class="dropdown" style="float: right;">
+        <button class="dropbtn">Account 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/profile">Profile</a>
+          <a href="/logout">Logout</a>
+        </div>
+      </div> 
+    </div>
+    <div class="date">
+      <p><%= date %></p>
+    </div>
+    <div class="form_control">
+      <% todoList.forEach(ele=>{ %>
+      <form action="/delete" method="POST">
+        <input
+          type="checkbox"
+          name="checkbox_id"
+          id="chbx"
+          value="<%= ele.id %>"
+          onchange="this.form.submit()"
+        />
+        <p><%= ele.data %></p>
+      </form>
+      <% }) %>
+
+      <form action="/add" method="POST" class="add_form">
+        <input
+          type="text"
+          name="todo"
+          id="add_inp"
+          placeholder="Add Todo Here"
+          autocomplete="off"
+        />
+        <button id="add_icon" onclick="this.form.submit()">
+          <span>+</span>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
